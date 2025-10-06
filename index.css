@@ -1,129 +1,125 @@
+/* Estilos generales */
 body {
     margin: 0;
-    padding: 0;
-    background: #fcf5c7;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    color: #333;
 }
 
-
-.name { 
-    width: 100%; 
-    height: 300px;
-    background:#ffc09f ;
-    transform: skewY(-5deg);
-}
-
-.name .content {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 25%;
-}
-
-.name .content .p-1{
-    color: #000;
-    font-family: 'Baloo Tamma 2', sans-serif;
-    font-weight: bolder;
-    font-size: 60px;
-    transform: skewY(5deg);
-    margin-bottom: 0;
-}
-
-.name .content .p-2{
-    color: #000;
-    font-family: 'Baloo Tamma 2', sans-serif;
-    font-size: 25px;
-    transform: skewY(5deg);
-     margin-bottom: 0;
-}
-
-.name .img{
-    position: absolute;
-    top: 8%;
-    right: 5%;
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-    transform: skewY(5deg);
-    overflow: hidden;
-}
-
-.name .img img {
-    width: 180px;
-    height: 320px;
-}
-
-.info{
+/* Contenedor del formulario */
+.contenedor {
     width: 90%;
-    height: auto;
-    background: #ffc09f;
-    margin: 5% auto;
+    max-width: 500px;
+    margin: 30px auto;
     padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
 }
 
-.info .tituloSeccion {
-    color: #000;
-    font-family: 'Baloo Tamma 2', sans-serif;
-    font-size: xx-large;
+h1 {
     text-align: center;
-    font-weight: bolder;
-    border-bottom: 2px  dashed;
+    color: #d63384;
+    margin-bottom: 25px;
 }
 
-.info .tituloInfo{
-    color: #000;
-    font-family: 'Baloo Tamma 2',sans-serif;
-    font-weight: bolder;
-    font-size: large;
-    display: inline;
-    margin-right: 20px;
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.info .infoInfo {
-    color: #000;
-    font-family: 'Baloo Tamma 2', sans-serif;
-    font-weight: normal;
-    font-size: large;
-    display: inline;
-
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d63384;
 }
 
-.body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ff99cc;
+    border-radius: 8px;
+    background-color: #fff0f5;
+    font-size: 16px;
+}
 
-    table {
-      width: 70%;
-      border-collapse: collapse;
-      background: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      overflow: hidden;
-      margin: auto;
-    }
+button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
 
-    thead {
-      background: #ff0080;
-      color: white;
-    }
+button[type="submit"]:hover {
+    background-color: #e60073;
+}
 
-    th, td {
-      padding: 12px 15px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
+/* Mensajes de validación */
+#mensaje {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
 
-    tr:hover {
-      background: #f5f5f5;
-    }
+/* Sección Clientes Registrados */
+.clients-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+}
 
-    th {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+.clients-section h3 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 20px;
+}
 
+/* Estadísticas */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
 
+.stats div {
+    text-align: center;
+    background-color: #ffe6f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
+}
+
+.stats h4 {
+    margin: 0;
+    color: #d63384;
+}
+
+/* Lista de clientes */
+.client-list {
+    background-color: #ffe6f0;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+/* Cada cliente registrado */
+.client-item {
+    background-color: #fff0f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5);
+    font-size: 15px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos de Clientes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ingreso de Datos de Clientes</h1>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <button type="submit">Registrar Cliente</button>
+        </form>
+        <div id="mensaje"></div>
+    </div>
+
+    <!-- Sección Clientes Registrados -->
+    <section class="clients-section">
+        <h3>Clientes Registrados</h3>
+        <div class="stats">
+          <div><h4 id="totalClientes">0</h4><p>Total</p></div>
+          <div><h4 id="clientesHoy">0</h4><p>Hoy</p></div>
+        </div>
+        <div id="clientesList" class="client-list">
+          <p>🎯 ¡Comienza a registrar!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
